@@ -3,5 +3,12 @@ class StationSearchFacade
 
 	def initialize(zipcode)
 		@zipcode = zipcode
+		@stations = stations
+	end
+
+	def stations
+		#make API call
+		#parse JSON
+		#create objects
 	end
 end
