@@ -1,0 +1,21 @@
+<h2>Stations within 6 miles:</h2>
+
+<section class='station'>
+<% facade.stations.each do |station| %>
+	<section class='name'>
+		<%= station.name %>
+	</section>
+	<section class='address'>
+		<%= station.address %>
+	</section>
+	<section class='fuel_types'>
+		<%= station.fuel_types %>
+	</section>
+	<section class='distance'>
+		<%= station.distance %>
+	</section>
+	<section class='access_times'>
+		<%= station.access_times %>
+	</section>
+</section>
+<% end %>
