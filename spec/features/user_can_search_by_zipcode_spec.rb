@@ -2,6 +2,7 @@ require 'rails_helper'
 
 describe 'User can search by zipcode' do
 	it 'And see stations limited to electric and propane' do
+		#Add webmock stub...
 
 		visit '/'
 

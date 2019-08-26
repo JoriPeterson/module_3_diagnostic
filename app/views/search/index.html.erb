@@ -3,19 +3,20 @@
 <% facade.stations.map do |station| %>
 <section class='station'>
 	<div class='name'>
-		<%= station.name %>
+		<p>Station: <%= station.name %></p>
 	</div>
 	<div class='address'>
-		<%= station.address %>
+		<p>Address: <%= station.address %></p>
 	</div>
 	<div class='fuel_types'>
-		<%= station.fuel_types %>
+		<p>Fuel Types: <%= station.fuel_types %></p>
 	</div>
 	<div class='distance'>
-		<%= station.distance %>
+		<p>Distance: <%= station.distance %></p>
 	</div>
 	<div class='access_times'>
-		<%= station.access_times %>
+		<p>Access Times: <%= station.access_times %></p>
 	</div>
+	<br>
 </section>
 <% end %>
