@@ -15,7 +15,7 @@ class StationSearchFacade
 
 		response = conn.get("/api/alt-fuel-stations/v1/nearest.json?location=#{zipcode}")
 		search_results = JSON.parse(response.body, symbolize_names: true)
-# binding.pry
+
 		search_results[:fuel_stations].map do |result|
 			Station.new(result)
 		end

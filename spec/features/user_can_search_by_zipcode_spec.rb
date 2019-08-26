@@ -10,7 +10,7 @@ describe 'User can search by zipcode' do
 
 		expect(current_path).to eq('/search')
 		expect(page).to have_css(".station", count: 10)
-		within(first(".member")) do
+		within(first(".station")) do
 			expect(page).to have_css(".name")
 			expect(page).to have_css(".address")
 			expect(page).to have_css(".fuel_types")
